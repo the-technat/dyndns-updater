@@ -15,7 +15,15 @@ docker run -d --rm --name dyndns-updater dyndns-updater
 The dyndns-updatersh is a simple bash script that curls the dyndns update url of your domains. You can add a new domain to update like so:
 
 1. Copy this Code block and paste it right bevor the line where is says "Update urls":
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 2. Addjust your settings
+```
+########## DynDNS Variables example.com ##################
+#dyndns_domain='sub.example.com'
+#dyndns_user='exampleuser'
+#dyndns_pw='ThisPasswordIsVeryPublic!!!'
+#dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hostname=${dyndns_domain}&myip=${dyndns_public_ip}")
+###########################################################
 
+################### Update urls  ##########################
+```
 3. Save and exit with ctrl+o and ctrl+x
