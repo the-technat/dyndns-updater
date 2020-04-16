@@ -7,7 +7,7 @@ MAINTAINER Nathanael Liechti technat@technat.ch
 #####################
 
 # Install dependencies
-RUN apk update && apk add curl && apk add dcron
+RUN apk update && apk add curl && apk add dcron && apk add bash
 
 # create dir structure
 RUN mkdir /dyndns
@@ -28,4 +28,4 @@ RUN crontab /etc/cron.d/dyndns-cron
 RUN touch /var/log/cron.log
 
 # set entrypoint
-ENTRYPOINT crond -f && tail -f /var/log/cron.log
+CMD crond && tail -f /var/log/cron.log

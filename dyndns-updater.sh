@@ -18,18 +18,11 @@ dyndns_pw='sml12345'
 dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hostname=${dyndns_domain}&myip=${dyndns_public_ip}")
 ###########################################################
 
-########## DynDNS Variables next domain ####### ###########
-#dyndns_domain=''
-#dyndns_user=''
-#dyndns_pw=''
-#dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hostname=${dyndns_domain}&myip=${dyndns_public_ip}")
-###########################################################
-
 ################### Update urls  ##########################
 for  url in "${dyndns_urls[@]}"
 do
 echo $url
-echo url=$url |curl -v -K -
+echo url=$url |curl -K -
 done
 
 
