@@ -4,9 +4,7 @@ MAINTAINER Nathanael Liechti technat@technat.ch
 ###### Sources ######
 #- https://stackoverflow.com/questions/37458287/how-to-run-a-cron-job-inside-a-docker-container
 #- https://tinklr.net/raspberrypi/2017/03/12/setup-dynamic-dns.html
-#
 #####################
-
 
 # Install dependencies
 RUN apk update && apk add curl && apk add dcron
