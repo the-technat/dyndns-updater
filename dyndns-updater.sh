@@ -26,10 +26,10 @@ dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hos
 ###########################################################
 
 ################### Update urls  ##########################
-for  url in "${dyndns_urls[@]}" 
+for  url in "${dyndns_urls[@]}"
 do
 echo $url
-echo url=$url |curl -v -K -  
+echo url=$url |curl -v -K -
 done
 
 
