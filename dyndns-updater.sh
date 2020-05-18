@@ -12,10 +12,10 @@ dyndns_public_ip=$(curl https://ipinfo.io/ip)
 declare -a dyndns_urls
 
 ########## DynDNS Variables example.com ##################
-#dyndns_domain='sub.example.com'
-#dyndns_user='exampleuser'
-#dyndns_pw='ThisPasswordIsVeryPublic!!!'
-#dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hostname=${dyndns_domain}&myip=${dyndns_public_ip}")
+dyndns_domain='sub.example.com'
+dyndns_user='exampleuser'
+dyndns_pw='ThisPasswordIsVeryPublic!!!'
+dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hostname=${dyndns_domain}&myip=${dyndns_public_ip}")
 ###########################################################
 
 ################### Update urls  ##########################
