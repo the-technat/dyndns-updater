@@ -5,7 +5,7 @@ The dyndns-updater is a simple docker containe for updating the dnydns domains o
 To run that, simply clone it, change your domain settings in dyndns-updater.sh, build and then run!
 
 ```
-git clone git@github.com:Bergregenwurm/dyndns-updater.git
+git clone https://github.com/the-technat/dyndns-updater.git
 nano dyndns-upadater.sh
 docker build -t dyndns-updater .
 docker run -d --rm --name dyndns-updater dyndns-updater
