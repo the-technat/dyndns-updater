@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: Nathanael Liechti
+# Author: Technat (technat.ch)
 # Description: Simple DynDNS Update Script for Infomaniak
 # Warning! This script contains some sensitive Data!
 # Sources:
@@ -11,8 +11,8 @@
 dyndns_public_ip=$(curl https://ipinfo.io/ip)
 declare -a dyndns_urls
 
-########## DynDNS Variables for sugus.techpi.ch ###########
-dyndns_domain='sugus.techpi.ch'
+########## DynDNS Variables for sub.example.com ###########
+dyndns_domain='sub.example.com'
 dyndns_user='techpi'
 dyndns_pw='sml12345'
 dyndns_urls+=("https://${dyndns_user}:${dyndns_pw}@infomaniak.com/nic/update?hostname=${dyndns_domain}&myip=${dyndns_public_ip}")
