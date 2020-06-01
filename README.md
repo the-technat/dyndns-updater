@@ -8,7 +8,7 @@ To run that, simply clone it, change your domain settings in dyndns-updater.sh, 
 git clone https://github.com/the-technat/dyndns-updater.git
 nano dyndns-upadater.sh
 docker build -t dyndns-updater .
-docker run -d --rm --name dyndns-updater dyndns-updater
+docker run -d --restart=always --name dyndns-updater dyndns-updater
 ```
 
 # dyndns-updater.sh
